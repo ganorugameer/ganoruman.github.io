@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Ganoruman</title>
 
     <style>
@@ -12,160 +10,93 @@
             box-sizing: border-box;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
             background: #080b12;
             color: white;
+            font-family: Arial, sans-serif;
         }
 
         header {
-            position: sticky;
-            top: 0;
-            z-index: 10;
-
+            padding: 20px 8%;
+            background: #111827;
             display: flex;
             justify-content: space-between;
             align-items: center;
-
-            padding: 18px 7%;
-
-            background: rgba(10, 14, 24, 0.95);
-            border-bottom: 1px solid #222a3a;
         }
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
+        header h1 {
+            margin: 0;
         }
 
         nav a {
-            color: #dbe4f5;
+            color: white;
             text-decoration: none;
-            margin-left: 25px;
-        }
-
-        nav a:hover {
-            color: #4d8dff;
+            margin-left: 20px;
         }
 
         .hero {
-            min-height: 75vh;
-
+            min-height: 70vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
             text-align: center;
-
-            padding: 80px 20px;
-
-            background:
-                radial-gradient(
-                    circle at center,
-                    #17264a 0%,
-                    #080b12 65%
-                );
+            padding: 40px 20px;
         }
 
-        .hero h1 {
-            font-size: clamp(50px, 9vw, 100px);
-            margin: 0;
+        .hero h2 {
+            font-size: 60px;
+            margin: 0 0 15px;
         }
 
         .hero p {
-            max-width: 650px;
-            color: #aeb9cc;
+            color: #b8c0cc;
             font-size: 20px;
-            line-height: 1.6;
         }
 
         .button {
             display: inline-block;
-
             margin-top: 20px;
-            padding: 14px 25px;
-
+            padding: 14px 24px;
             background: #2563eb;
             color: white;
-
             text-decoration: none;
-
-            border-radius: 10px;
-        }
-
-        .button:hover {
-            background: #3b82f6;
+            border-radius: 8px;
         }
 
         section {
-            padding: 80px 7%;
+            padding: 70px 8%;
         }
 
-        section h2 {
+        section > h2 {
             text-align: center;
-            font-size: 36px;
+            font-size: 35px;
         }
 
         .projects {
-            display: grid;
-            grid-template-columns:
-                repeat(auto-fit, minmax(250px, 1fr));
-
+            display: flex;
             gap: 25px;
-
-            max-width: 1100px;
-            margin: auto;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .project {
-            padding: 30px;
-
-            background: #111827;
-
-            border: 1px solid #222a3a;
-            border-radius: 15px;
-
-            transition: transform 0.2s;
-        }
-
-        .project:hover {
-            transform: translateY(-5px);
-        }
-
-        .project h3 {
-            font-size: 24px;
+            width: 280px;
+            padding: 25px;
+            background: #151c2c;
+            border-radius: 12px;
         }
 
         .project p {
-            color: #aeb9cc;
-            line-height: 1.5;
-        }
-
-        .download {
-            max-width: 800px;
-            margin: auto;
-
-            padding: 30px;
-
-            background: #111827;
-
-            border-radius: 15px;
-
-            text-align: center;
+            color: #b8c0cc;
         }
 
         footer {
             padding: 30px;
             text-align: center;
-
-            background: #06080d;
-            color: #788398;
+            background: #111827;
+            color: #888;
         }
     </style>
 </head>
@@ -173,29 +104,25 @@
 <body>
 
 <header>
-    <div class="logo">Ganoruman</div>
+    <h1>Ganoruman</h1>
 
     <nav>
         <a href="#home">Home</a>
         <a href="#projects">Projects</a>
         <a href="#downloads">Downloads</a>
-        <a href="#about">About</a>
     </nav>
 </header>
 
 <section id="home" class="hero">
-
-    <h1>Ganoruman</h1>
+    <h2>Welcome to Ganoruman</h2>
 
     <p>
-        Software, operating systems, games,
-        and other projects created by me.
+        Software, operating systems, games, and creations.
     </p>
 
     <a class="button" href="#projects">
-        Explore Projects
+        View Projects
     </a>
-
 </section>
 
 <section id="projects">
@@ -206,40 +133,20 @@
 
         <div class="project">
             <h3>GanoruOS</h3>
-
-            <p>
-                A custom operating system built from the ground up.
-            </p>
-
-            <a class="button" href="#">
-                View Project
-            </a>
+            <p>My custom operating system.</p>
+            <a class="button" href="#">Learn More</a>
         </div>
 
         <div class="project">
             <h3>NifrOS</h3>
-
-            <p>
-                A gaming-focused operating system designed
-                for gaming and compatibility.
-            </p>
-
-            <a class="button" href="#">
-                View Project
-            </a>
+            <p>My gaming-focused operating system.</p>
+            <a class="button" href="#">Learn More</a>
         </div>
 
         <div class="project">
             <h3>Codery</h3>
-
-            <p>
-                A coding-learning application featuring
-                the AI tutor Sivro.
-            </p>
-
-            <a class="button" href="#">
-                View Project
-            </a>
+            <p>A coding-learning application with Sivro.</p>
+            <a class="button" href="#">Learn More</a>
         </div>
 
     </div>
@@ -250,42 +157,14 @@
 
     <h2>Downloads</h2>
 
-    <div class="download">
-
-        <h3>Software Downloads</h3>
-
-        <p>
-            Official downloads for my projects will appear here.
-        </p>
-
-        <a class="button" href="#">
-            Downloads
-        </a>
-
-    </div>
-
-</section>
-
-<section id="about">
-
-    <h2>About Ganoruman</h2>
-
-    <div class="download">
-
-        <p>
-            Welcome to Ganoruman. This is the home
-            for my software, operating systems, games,
-            and other creations.
-        </p>
-
-    </div>
+    <p style="text-align:center;">
+        Official Ganoruman downloads will appear here.
+    </p>
 
 </section>
 
 <footer>
-
     © 2026 Ganoruman
-
 </footer>
 
 </body>
