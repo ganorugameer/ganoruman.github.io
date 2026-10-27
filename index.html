@@ -1,10 +1,8 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Ganoruman</title>
 
     <style>
@@ -27,13 +25,10 @@
             position: sticky;
             top: 0;
             z-index: 10;
-
             display: flex;
             justify-content: space-between;
             align-items: center;
-
             padding: 18px 7%;
-
             background: rgba(10, 14, 24, 0.96);
             border-bottom: 1px solid #222a3a;
         }
@@ -55,14 +50,11 @@
 
         .hero {
             min-height: 75vh;
-
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
             text-align: center;
-
             padding: 80px 20px;
 
             background:
@@ -87,13 +79,10 @@
 
         .button {
             display: inline-block;
-
             margin-top: 20px;
             padding: 14px 25px;
-
             background: #2563eb;
             color: white;
-
             text-decoration: none;
             border-radius: 10px;
         }
@@ -114,11 +103,9 @@
         #projects-container {
             max-width: 1100px;
             margin: auto;
-
             display: grid;
             grid-template-columns:
                 repeat(auto-fit, minmax(250px, 1fr));
-
             gap: 25px;
         }
 
@@ -133,166 +120,6 @@
             padding: 40px;
         }
 
-        .project,
-        .download {
-            padding: 30px;
-
-            background: #111827;
-
-            border: 1px solid #222a3a;
-            border-radius: 15px;
-        }
-
-        .project h3,
-        .download h3 {
-            font-size: 24px;
-        }
-
-        .project p,
-        .download p {
-            color: #aeb9cc;
-            line-height: 1.5;
-        }
-
         footer {
             padding: 30px;
-            text-align: center;
-
-            background: #06080d;
-            color: #788398;
-        }
-
-        @media (max-width: 700px) {
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav a {
-                margin-left: 10px;
-                margin-right: 10px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-<header>
-
-    <div class="logo">
-        Ganoruman
-    </div>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#downloads">Downloads</a>
-        <a href="#about">About</a>
-    </nav>
-
-</header>
-
-
-<section id="home" class="hero">
-
-    <h1>Ganoruman</h1>
-
-    <p>
-        Software, operating systems, games,
-        and other projects created by me.
-    </p>
-
-    <a class="button" href="#projects">
-        Explore Projects
-    </a>
-
-</section>
-
-
-<section id="projects">
-
-    <h2>Published Projects</h2>
-
-    <div id="projects-container">
-
-        <!--
-            PROJECTS WILL BE INSERTED HERE
-            ONLY WHEN THEY ARE PUBLISHED.
-        -->
-
-        <div class="empty">
-            No projects have been published yet.
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="downloads">
-
-    <h2>Published Downloads</h2>
-
-    <div id="downloads-container">
-
-        <!--
-            DOWNLOADS WILL BE INSERTED HERE
-            ONLY WHEN THEY ARE PUBLISHED.
-        -->
-
-        <div class="empty">
-            No downloads have been published yet.
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="about">
-
-    <h2>About Ganoruman</h2>
-
-    <div class="empty">
-
-        <p>
-            Welcome to Ganoruman.
-        </p>
-
-        <p>
-            This website is the home for my software,
-            operating systems, games, and other creations.
-        </p>
-
-    </div>
-
-</section>
-
-
-<footer>
-
-    © 2026 Ganoruman
-
-</footer>
-
-
-<script>
-
-    /*
-        PUBLIC PUBLISHING SYSTEM
-
-        The public page contains NO project data.
-
-        Later, the private admin system will provide
-        the projects and downloads that have been
-        marked as published.
-
-        Unpublished content will not be displayed.
-    */
-
-</script>
-
-</body>
-</html>
-```
+            text-align:
